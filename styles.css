@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+ 
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+html{
+    height: -webkit-fill-available;
+}
+body{
+    background-image: url(beach.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: -webkit-fill-available;
+}
+
+.todo{
+width: 500px;
+height: 100vh;
+color: #fff;
+margin: 40px auto;
+padding: 10px 30px;
+
+}
+h1{
+    text-align: center;
+    color: turquoise;
+}
+input{
+    width: 450px;
+    height: 40px;
+    margin: 50px 0;
+    padding: 10px;
+    color: black;
+    font-size: larger;
+    border-radius: 20px;
+    border: none;
+}
+input:focus{
+    outline: 0;
+}
+#addBtn{
+    padding: 10px;
+    margin-left: 10px;
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #686262;
+    color: #27cc0d;
+    position: relative;
+    left: 370px;
+    top: -90px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#addBtn:hover{
+   cursor: pointer; 
+   background-color: turquoise;
+   color: black;
+}
+
+li{
+    font-size: 15px;
+    width: 300px;
+    height: 35px;
+    background-color: white;
+border-radius: 10px;
+border: none;
+    color:black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.complete{
+    position: relative;
+    left: 335px;
+    top: -30px;
+    padding: 7px;
+    background-color: #959292;
+    color: black;
+    border-radius: 10px;
+    border: none;
+}
+.complete:hover{
+    cursor: pointer;
+    background-color: #14c814;
+    color: white;
+}
+
+.del{
+    position: relative;
+    left: 385px;
+    top: -30px;
+    padding: 7px;
+    background-color: #7d0909;
+    color: #f54747;
+    border-radius: 10px;
+    border: none;  
+    visibility: hidden;
+}
+.del:hover{
+    background-color: #ed2828;
+    color: white;
+}
+@media only screen and (max-width: 600px){
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
+width: 400px;
+height: 100vh;
+
+}
+
+}
